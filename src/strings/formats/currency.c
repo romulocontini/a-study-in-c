@@ -4,7 +4,7 @@
 
 enum location {pt_BR, en_US, LOC_MAX};
 
-char *format_currency (char *in, enum location loc){
+char *format_currency(char *in, enum location loc){
     static const char decimalChar[LOC_MAX] = {',', '.'};
     static const char thousandsChar[LOC_MAX] = {'.', ','};
 
@@ -47,7 +47,7 @@ char *format_currency (char *in, enum location loc){
     return in;
 }
 
-void main (void){
+void main(void){
     char *money_str[] = {
         "10010",
         "230055",
